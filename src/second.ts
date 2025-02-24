@@ -177,13 +177,142 @@
 // }
 // console.log(func(8, 3, 4));
 
-type h = (n: number, m: number, p: number) => number;
+// type h = (n: number, m: number, p: number) => number;
 
-const f: h = (n, m, l) => {
-    return n + m + l;
+// const f: h = (n, m, l) => {
+//     return n + m + l;
 
-}
-console.log(f(8, 8, 8));
+// }
+// console.log(f(8, 8, 8));
+
+//rest operator
+
+
+
+// const func = (...y:number[]) => {
+//     return y
+// }
+// console.log(func(5, 6, 7, 6, 7, 5, 4, 3, 5));
+
+//This JavaScript function uses the rest operator (...), which allows it to accept any number of arguments as an array.
+
+
+// type funcType = (...m:number[]) => number[];
+
+// const func:funcType = (...m) => {
+//     return m;
+// }
+// console.log(func(5, 6, 7, 6, 7, 5, 4, 3, 5));
+
+
+// function p (n: number):number{
+//     return 50
+// }
+// console.log(p(56)); //print 50
+
+
+// type p = (n: number) => number;
+// const lol: p = function lol(k) {
+//     return 89;
+// }
+
+//functions with object
+
+// const getData = (product: { name: string, stock: number, price: number }) => {
+//     console.log(product);
+// }
+
+// getData({ name: "sanjay", stock: 90, price: 89 });
+
+// type t = (product: {
+//     name: string, stock: number, price: number
+// }) => void;
+// const p: t = (product) => {
+//     console.log(product);
+// }
+// p({ name: "sanjay", stock: 89, price: 9 });
+
+
+// type t = (name: string, stock: number, price: number) => void;
+
+// const p: t = (name, stock, price) => {
+//     console.log({ name, stock, price });
+// };
+
+
+// p("sanjay", 89, 9);
+
+//----------
+
+// const productfirst = {
+//     name: "macbook",
+//     stock: 67,
+//     price:100000,
+// }
+
+// type t = (product: {
+//     name: string, stock: number, price: number
+// }) => void;
+// const p: t = (product) => {
+//     console.log(product);
+//     console.log(productfirst)
+// }
+// p({ name: "sanjay", stock: 89, price: 9 });
+
+//-----
+
+// Define an interface for product structure
+// interface B {
+//     name: string;
+//     stock: number;
+//     price: number;
+// }
+// const productFirst: B = {
+//     name: "macbook",
+//     stock: 67,
+//     price: 100000,
+// };
+
+// // Define function type using the interface
+// type T = (product: B) => void;
+
+// const p: T = (product) => {
+//     console.log(product);
+//     console.log(productFirst);
+// };
+
+
+// p({ name: "virendra", stock: 89, price: 9 });
+
+//-------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
