@@ -85,6 +85,119 @@
 
 
 
+//object
+// const obj = {
+//     height: 34,
+//     width: 89,
+// }
+// console.log(obj);
+
+
+// const obj: {
+//     height: number;
+//     width: number;
+// } = {
+//     height: 56,
+//     width:89,
+// }
+// console.log(obj);
+
+
+
+
+// type jk= {
+//     height: number,
+//     width: number,
+//     gender?:boolean,
+// }
+
+// const obj: jk = {
+    
+//     height: 78,
+//     width:56,
+// }
+// console.log(obj);
+
+// height: number → A required property of type number.
+
+
+// width: number → A required property of type number.
+
+
+// gender?: boolean → An optional property of type boolean. The ? indicates that this property may or may not be present in an object.
+
+
+
+
+
+// interface ob {
+//     height: number;
+//     weight: number;
+//     gender: boolean;
+// }
+// const obj: ob = {
+//     height: 90,
+//     weight: 89,
+//     gender: true,
+// }
+// console.log(obj);
+
+
+
+// interface Person {
+//     name: string;
+//     age: number;
+// }
+
+// interface Employee extends Person {
+//     employeeId: number;
+//     department: string;
+// }
+
+// const emp: Employee = {
+//     name: "Alice",
+//     age: 30,
+//     employeeId: 101,
+//     department: "IT"
+// };
+
+// console.log(emp);
+
+
+// interface Employee extends Person:
+// This means Employee inherits all properties from Person (name and age).
+// It also adds new properties: employeeId and department.
+// emp is an object of type Employee, so it must include all properties from Person plus the additional ones.
+
+
+//---------
+
+// const func = (n:number,m:number,p:number) => {
+//     return n * m * p;
+// }
+// console.log(func(8, 3, 4));
+
+type h = (n: number, m: number, p: number) => number;
+
+const f: h = (n, m, l) => {
+    return n + m + l;
+
+}
+console.log(f(8, 8, 8));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
